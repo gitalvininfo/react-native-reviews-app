@@ -1,8 +1,10 @@
+import 'react-native-gesture-handler';
 import AppLoading from 'expo-app-loading';
 import { useFonts } from 'expo-font';
 import React, { useState } from 'react';
 import Home from './screens/home';
 import { View, Text, StyleSheet } from 'react-native';
+import Navigator from './routes/homeStack';
 
 export default function App() {
 
@@ -16,7 +18,7 @@ export default function App() {
   }
 
   return (
-    <Home />
+    <Navigator />
   );
 
 }
